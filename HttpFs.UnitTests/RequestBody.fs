@@ -42,7 +42,7 @@ let apiUsage =
                    ValidUri)
 
     testCase "with method assign to 'method' property of request" <| fun _ ->
-      Assert.Equal((createValidRequest |> Request.method Get).``method``,
+      Assert.Equal((createValidRequest |> Request.assignMethod Get).``method``,
                    Get)
   ]
 
